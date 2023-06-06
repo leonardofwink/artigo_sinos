@@ -174,8 +174,8 @@ boxplot_od <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eixo_y
       y ="mg/L"
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_y_continuous(
@@ -201,6 +201,7 @@ boxplot_od <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eixo_y
         group = 1
       ),
       alpha = .5,
+      color = "#662299",
       na.rm = TRUE,
       size = 1
     )+
@@ -258,8 +259,8 @@ boxplot_od_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
       y ="OD (mg/L)"
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_y_continuous(
@@ -286,11 +287,11 @@ boxplot_od_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
       ),
       alpha = .5,
       na.rm = TRUE,
+      color = "#662299",
       size = 1
     )+
     theme_bw()+
     theme_grafs()
-  # theme_classic()
 }
 ```
 
@@ -346,8 +347,8 @@ boxplot_dbo <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eixo_
       # caption = "Leonardo Fernandes Wink"
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_x_discrete(
@@ -371,6 +372,7 @@ boxplot_dbo <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eixo_
                 se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                 aes(group=1),
                 alpha=.5,
+                color = "#662299",
                 na.rm = TRUE,
                 size = 1)+
     theme_grafs()
@@ -423,8 +425,8 @@ boxplot_dbo_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, ei
         # "DBO5 (mg/L)"
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_y_continuous(
@@ -449,6 +451,7 @@ boxplot_dbo_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, ei
       aes(
         group = 1
       ),
+      color = "#662299",
       alpha = .5,
       na.rm = TRUE,
       size = 1
@@ -510,8 +513,8 @@ boxplot_ecoli <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
          x="Estação",
          y="NMP/100mL")+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_x_discrete(
@@ -539,6 +542,7 @@ boxplot_ecoli <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
                 se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                 aes(group=1),
                 alpha=.5,
+                color = "#662299",
                 na.rm = TRUE,
                 size = 1)+
     theme_grafs()+
@@ -604,8 +608,8 @@ boxplot_ecoli_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, 
          x="Estação",
          y= "E. coli (NMP/100mL)")+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_x_discrete(
@@ -633,6 +637,7 @@ boxplot_ecoli_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, 
                 se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                 aes(group=1),
                 alpha=.5,
+                color = "#662299",
                 na.rm = TRUE,
                 size = 1)+
     theme_bw()+
@@ -702,8 +707,8 @@ boxplot_namon <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
                                                      decimal.mark = ",",
                                                      big.mark = " "))+
    ggbeeswarm::geom_quasirandom(
-     size = 1.2,
-     alpha = .25,
+     size = 1.3,
+     alpha = .35,
      width = .07,
    )+
     scale_x_discrete(
@@ -721,6 +726,7 @@ boxplot_namon <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
                se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                aes(group=1),
                alpha=.5,
+               color = "#662299",
                na.rm = TRUE,
                size = 1)+
    theme_grafs()
@@ -772,8 +778,8 @@ boxplot_namon_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, 
                                                      decimal.mark = ",",
                                                      big.mark = " "))+
    ggbeeswarm::geom_quasirandom(
-     size = 1.2,
-     alpha = .25,
+     size = 1.3,
+     alpha = .35,
      width = .07,
    )+
     scale_x_discrete(
@@ -791,6 +797,7 @@ boxplot_namon_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, 
                se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                aes(group=1),
                alpha=.5,
+               color = "#662299",
                na.rm = TRUE,
                size = 1)+
     theme_bw()+
@@ -844,8 +851,8 @@ boxplot_solidos_totais <- function(dados = dados_sinos, eixo_x = ponto_monitoram
                                                      big.mark = " "),
                       trans = "log10")+
    ggbeeswarm::geom_quasirandom(
-     size = 1.2,
-     alpha = .25,
+     size = 1.3,
+     alpha = .35,
      width = .07,
    )+
     scale_x_discrete(
@@ -863,6 +870,7 @@ boxplot_solidos_totais <- function(dados = dados_sinos, eixo_x = ponto_monitoram
                se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                aes(group=1),
                alpha=.5,
+               color = "#662299",
                na.rm = TRUE,
                size = 1)+
    theme_grafs()
@@ -910,8 +918,8 @@ boxplot_solidos_totais_pb <- function(dados = dados_sinos, eixo_x = ponto_monito
                                                      big.mark = " "),
                       trans = "log10")+
    ggbeeswarm::geom_quasirandom(
-     size = 1.2,
-     alpha = .25,
+     size = 1.3,
+     alpha = .35,
      width = .07,
    )+
     scale_x_discrete(
@@ -929,6 +937,7 @@ boxplot_solidos_totais_pb <- function(dados = dados_sinos, eixo_x = ponto_monito
                se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                aes(group=1),
                alpha=.5,
+               color = "#662299",
                na.rm = TRUE,
                size = 1)+
     theme_bw()+
@@ -982,8 +991,8 @@ boxplot_pH <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eixo_y
       y = NULL,
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_y_continuous(expand = expansion(mult = c(0.05, 0.05)),
@@ -1008,6 +1017,7 @@ boxplot_pH <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eixo_y
       method = "lm",
       se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
       aes(group = 1),
+      color = "#662299",
       alpha = .5,
       na.rm = TRUE,
       size = 1
@@ -1045,8 +1055,8 @@ boxplot_pH_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
       y = "pH",
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     geom_hline(
@@ -1084,6 +1094,7 @@ boxplot_pH_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
       se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
       aes(group = 1),
       alpha = .5,
+      color = "#662299",
       na.rm = TRUE,
       size = 1
     )+
@@ -1122,8 +1133,8 @@ boxplot_temp_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, e
       y = "Temperatura (ºC)",
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_y_continuous(
@@ -1152,6 +1163,7 @@ boxplot_temp_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, e
       se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
       aes(group = 1),
       alpha = .5,
+      color = "#662299",
       na.rm = TRUE,
       size = 1
     )+
@@ -1200,8 +1212,8 @@ boxplot_turb_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, e
       y = "Turbidez (UNT)",
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_y_continuous(
@@ -1231,6 +1243,7 @@ boxplot_turb_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, e
       se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
       aes(group = 1),
       alpha = .5,
+      color = "#662299",
       na.rm = TRUE,
       size = 1
     )+
@@ -1347,8 +1360,8 @@ stat_boxplot(
       y = expression(DBO[5]~(mg/L)),
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_x_discrete(
@@ -1372,6 +1385,7 @@ stat_boxplot(
                 se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                 aes(group=1),
                 alpha=.5,
+                color = "#662299",
                 na.rm = TRUE,
                 size = 1)+
     theme_grafs()

@@ -189,8 +189,8 @@ boxplot_od <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eixo_y
       y ="mg/L"
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_y_continuous(
@@ -216,6 +216,7 @@ boxplot_od <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eixo_y
         group = 1
       ),
       alpha = .5,
+      color = "#662299",
       na.rm = TRUE,
       size = 1
     )+
@@ -274,8 +275,8 @@ boxplot_od_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
       y ="OD (mg/L)"
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_y_continuous(
@@ -302,11 +303,11 @@ boxplot_od_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
       ),
       alpha = .5,
       na.rm = TRUE,
+      color = "#662299",
       size = 1
     )+
     theme_bw()+
     theme_grafs()
-  # theme_classic()
 }
 ```
 
@@ -363,8 +364,8 @@ boxplot_dbo <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eixo_
       # caption = "Leonardo Fernandes Wink"
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_x_discrete(
@@ -388,6 +389,7 @@ boxplot_dbo <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eixo_
                 se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                 aes(group=1),
                 alpha=.5,
+                color = "#662299",
                 na.rm = TRUE,
                 size = 1)+
     theme_grafs()
@@ -441,8 +443,8 @@ boxplot_dbo_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, ei
         # "DBO5 (mg/L)"
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_y_continuous(
@@ -467,6 +469,7 @@ boxplot_dbo_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, ei
       aes(
         group = 1
       ),
+      color = "#662299",
       alpha = .5,
       na.rm = TRUE,
       size = 1
@@ -529,8 +532,8 @@ boxplot_ecoli <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
          x="Estação",
          y="NMP/100mL")+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_x_discrete(
@@ -558,6 +561,7 @@ boxplot_ecoli <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
                 se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                 aes(group=1),
                 alpha=.5,
+                color = "#662299",
                 na.rm = TRUE,
                 size = 1)+
     theme_grafs()+
@@ -624,8 +628,8 @@ boxplot_ecoli_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, 
          x="Estação",
          y= "E. coli (NMP/100mL)")+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_x_discrete(
@@ -653,6 +657,7 @@ boxplot_ecoli_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, 
                 se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                 aes(group=1),
                 alpha=.5,
+                color = "#662299",
                 na.rm = TRUE,
                 size = 1)+
     theme_bw()+
@@ -723,8 +728,8 @@ boxplot_namon <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
                                                      decimal.mark = ",",
                                                      big.mark = " "))+
    ggbeeswarm::geom_quasirandom(
-     size = 1.2,
-     alpha = .25,
+     size = 1.3,
+     alpha = .35,
      width = .07,
    )+
     scale_x_discrete(
@@ -742,6 +747,7 @@ boxplot_namon <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
                se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                aes(group=1),
                alpha=.5,
+               color = "#662299",
                na.rm = TRUE,
                size = 1)+
    theme_grafs()
@@ -794,8 +800,8 @@ boxplot_namon_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, 
                                                      decimal.mark = ",",
                                                      big.mark = " "))+
    ggbeeswarm::geom_quasirandom(
-     size = 1.2,
-     alpha = .25,
+     size = 1.3,
+     alpha = .35,
      width = .07,
    )+
     scale_x_discrete(
@@ -813,6 +819,7 @@ boxplot_namon_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, 
                se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                aes(group=1),
                alpha=.5,
+               color = "#662299",
                na.rm = TRUE,
                size = 1)+
     theme_bw()+
@@ -867,8 +874,8 @@ boxplot_solidos_totais <- function(dados = dados_sinos, eixo_x = ponto_monitoram
                                                      big.mark = " "),
                       trans = "log10")+
    ggbeeswarm::geom_quasirandom(
-     size = 1.2,
-     alpha = .25,
+     size = 1.3,
+     alpha = .35,
      width = .07,
    )+
     scale_x_discrete(
@@ -886,6 +893,7 @@ boxplot_solidos_totais <- function(dados = dados_sinos, eixo_x = ponto_monitoram
                se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                aes(group=1),
                alpha=.5,
+               color = "#662299",
                na.rm = TRUE,
                size = 1)+
    theme_grafs()
@@ -934,8 +942,8 @@ boxplot_solidos_totais_pb <- function(dados = dados_sinos, eixo_x = ponto_monito
                                                      big.mark = " "),
                       trans = "log10")+
    ggbeeswarm::geom_quasirandom(
-     size = 1.2,
-     alpha = .25,
+     size = 1.3,
+     alpha = .35,
      width = .07,
    )+
     scale_x_discrete(
@@ -953,6 +961,7 @@ boxplot_solidos_totais_pb <- function(dados = dados_sinos, eixo_x = ponto_monito
                se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                aes(group=1),
                alpha=.5,
+               color = "#662299",
                na.rm = TRUE,
                size = 1)+
     theme_bw()+
@@ -1007,8 +1016,8 @@ boxplot_pH <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eixo_y
       y = NULL,
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_y_continuous(expand = expansion(mult = c(0.05, 0.05)),
@@ -1033,6 +1042,7 @@ boxplot_pH <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eixo_y
       method = "lm",
       se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
       aes(group = 1),
+      color = "#662299",
       alpha = .5,
       na.rm = TRUE,
       size = 1
@@ -1071,8 +1081,8 @@ boxplot_pH_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
       y = "pH",
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     geom_hline(
@@ -1110,6 +1120,7 @@ boxplot_pH_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, eix
       se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
       aes(group = 1),
       alpha = .5,
+      color = "#662299",
       na.rm = TRUE,
       size = 1
     )+
@@ -1149,8 +1160,8 @@ boxplot_temp_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, e
       y = "Temperatura (ºC)",
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_y_continuous(
@@ -1179,6 +1190,7 @@ boxplot_temp_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, e
       se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
       aes(group = 1),
       alpha = .5,
+      color = "#662299",
       na.rm = TRUE,
       size = 1
     )+
@@ -1228,8 +1240,8 @@ boxplot_turb_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, e
       y = "Turbidez (UNT)",
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_y_continuous(
@@ -1259,6 +1271,7 @@ boxplot_turb_pb <- function(dados = dados_sinos, eixo_x = ponto_monitoramento, e
       se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
       aes(group = 1),
       alpha = .5,
+      color = "#662299",
       na.rm = TRUE,
       size = 1
     )+
@@ -1454,8 +1467,8 @@ stat_boxplot(
       y = expression(DBO[5]~(mg/L)),
     )+
     ggbeeswarm::geom_quasirandom(
-      size = 1.2,
-      alpha = .25,
+      size = 1.3,
+      alpha = .35,
       width = .07,
     )+
     scale_x_discrete(
@@ -1479,6 +1492,7 @@ stat_boxplot(
                 se=FALSE, #se deixar TRUE gera o intervalo de confiança de 95%
                 aes(group=1),
                 alpha=.5,
+                color = "#662299",
                 na.rm = TRUE,
                 size = 1)+
     theme_grafs()
@@ -1995,525 +2009,3 @@ ggsave("st.png",
 ```
 ## Warning: Removed 2863 rows containing missing values.
 ```
-
-<!-- ```{r qboxplot_dbo} -->
-<!-- qboxplot(sinosDBO,main="Demanda Bioquímica de Oxigênio",probs=c(0.25,0.5,0.75),ylab="DBO (mg/L)",xlab="Pontos",las=1,ylim=c(0,25),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=10,col=7,lwd=2) -->
-<!-- abline(h=3,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- ``` -->
-
-
-<!-- ```{r} -->
-<!-- dev.off() -->
-<!-- png("sinosOD.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinosOD,main="Oxigênio Dissolvido",probs=c(0.25,0.5,0.75),ylab="OD (mg/L)",xlab="Pontos",las=1,ylim=c(0,12),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- abline(h=4,col=7,lwd=2) -->
-<!-- abline(h=2,col=2,lwd=2) -->
-<!-- dev.off() -->
-<!-- dev.off() -->
-<!-- png("sinosOD.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinosOD,main="Oxigênio Dissolvido",probs=c(0.25,0.5,0.75),ylab="OD (mg/L)",xlab="Pontos",las=1,ylim=c(0,12),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- abline(h=4,col=7,lwd=2) -->
-<!-- abline(h=2,col=2,lwd=2) -->
-<!-- dev.off() -->
-<!-- ?png -->
-<!-- install.packages(grDevices) -->
-<!-- install.packages("grDevices") -->
-<!-- install.packages("grDevices") -->
-<!-- install.packages("grDevices") -->
-<!-- install.packages("grDevices") -->
-<!-- install.packages("grDevices") -->
-<!-- png("sinosOD.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinosOD,main="Oxigênio Dissolvido",probs=c(0.25,0.5,0.75),ylab="OD (mg/L)",xlab="Pontos",las=1,ylim=c(0,12),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- abline(h=4,col=7,lwd=2) -->
-<!-- abline(h=2,col=2,lwd=2) -->
-<!-- library(qboxplot) -->
-<!-- png("sinosOD.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinosOD,main="Oxigênio Dissolvido",probs=c(0.25,0.5,0.75),ylab="OD (mg/L)",xlab="Pontos",las=1,ylim=c(0,12),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- abline(h=4,col=7,lwd=2) -->
-<!-- abline(h=2,col=2,lwd=2) -->
-<!-- qboxplot(sinosOD,main="Oxigênio Dissolvido",probs=c(0.25,0.5,0.75),ylab="OD (mg/L)",xlab="Pontos",las=1,ylim=c(0,12),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- abline(h=4,col=7,lwd=2) -->
-<!-- abline(h=2,col=2,lwd=2) -->
-<!-- sinosOD<-read.csv(file.choose(),header=T) -->
-<!-- sinosDBO<-read.csv(file.choose(),header=T) -->
-<!-- sinosTemp<-read.csv(file.choose(),header=T) -->
-<!-- sinospH<-read.csv(file.choose(),header=T) -->
-<!-- sinosTurb<-read.csv(file.choose(),header=T) -->
-<!-- sinosEcoli<-read.csv(file.choose(),header=T) -->
-<!-- sinosNamon<-read.csv(file.choose(),header=T) -->
-<!-- sinosSDT<-read.csv(file.choose(),header=T) -->
-<!-- qboxplot(sinosOD,main="Oxigênio Dissolvido",probs=c(0.25,0.5,0.75),ylab="OD (mg/L)",xlab="Pontos",las=1,ylim=c(0,12),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- abline(h=4,col=7,lwd=2) -->
-<!-- abline(h=2,col=2,lwd=2) -->
-<!-- save.image("C:/Users/Léo/Desktop/artigo sumire/workspace_art_sumire.RData") -->
-<!-- png("sinosOD.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinosOD,main="Oxigênio Dissolvido",probs=c(0.25,0.5,0.75),ylab="OD (mg/L)",xlab="Pontos",las=1,ylim=c(0,12),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- abline(h=4,col=7,lwd=2) -->
-<!-- abline(h=2,col=2,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosOD.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinosOD,main="Oxigênio Dissolvido",probs=c(0.25,0.5,0.75),ylab="OD (mg/L)",xlab="Pontos",las=1,ylim=c(0,12),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- abline(h=4,col=7,lwd=2) -->
-<!-- abline(h=2,col=2,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosDBO.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinosDBO,main="Demanda Bioquímica de Oxigênio",probs=c(0.25,0.5,0.75),ylab="mg/L",xlab"Pontos",las=1,ylim=c(0,25),col=c(8),outpch="o") -->
-<!-- abline(h=10,col=7,lwd=2) -->
-<!-- abline(h=3,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosDBO.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinosDBO,main="Demanda Bioquímica de Oxigênio",probs=c(0.25,0.5,0.75),ylab="mg/L",xlab="Pontos",las=1,ylim=c(0,25),col=c(8),outpch="o") -->
-<!-- abline(h=10,col=7,lwd=2) -->
-<!-- abline(h=3,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- dev.off() -->
-<!-- summary(sinosDBO) -->
-<!-- qboxplot(sinosDBO,main="Demanda Bioquímica de Oxigênio",probs=c(0.25,0.5,0.75),ylab="mg/L",xlab="Pontos",las=1,ylim=c(0,25),col=c(8),outpch="o") -->
-<!-- abline(h=10,col=7,lwd=2) -->
-<!-- abline(h=3,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosDBO.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinosDBO,main="Demanda Bioquímica de Oxigênio",probs=c(0.25,0.5,0.75),ylab="DBO (mg/L)",xlab="Pontos",las=1,ylim=c(0,25),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=10,col=7,lwd=2) -->
-<!-- abline(h=3,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosDBO.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- abline(h=10,col=7,lwd=2) -->
-<!-- abline(h=3,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- qboxplot(sinosDBO,main="Demanda Bioquímica de Oxigênio",probs=c(0.25,0.5,0.75),ylab="DBO (mg/L)",xlab="Pontos",las=1,ylim=c(0,25),col=c(8), -->
-<!-- outpch="o") -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosDBO.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot( -->
-<!-- abline(h=10,col=7,lwd=2) -->
-<!-- abline(h=3,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- sinosDBO,main="Demanda Bioquímica de Oxigênio",probs=c(0.25,0.5,0.75),ylab="DBO (mg/L)",xlab="Pontos",las=1,ylim=c(0,25),col=c(8), -->
-<!-- outpch="o") -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosDBO.png",width=1280, height= 1024, units = "px", res = 72) -->
-
-
-<!-- qboxplot(sinosDBO,main="Demanda Bioquímica de Oxigênio",probs=c(0.25,0.5,0.75),ylab="DBO (mg/L)",xlab="Pontos",las=1,ylim=c(0,25),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=10,col=7,lwd=2) -->
-<!-- abline(h=3,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-
-
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosDBO.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinosDBO,main="Demanda Bioquímica de Oxigênio",probs=c(0.25,0.5,0.75),ylab="DBO5 (mg/L)",xlab="Pontos",las=1,ylim=c(0,25),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=10,col=7,lwd=2) -->
-<!-- abline(h=3,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- dev.off() -->
-<!-- qboxplot(sinosTurb,log="y",probs=c(0.25,0.5,0.75),ylab="Turbidez (UNT)",xlab="Pontos",ylim=c(5,500),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=40,col=4,lwd=2) -->
-<!-- abline(h=100,col=7,lwd=2) -->
-<!-- summary(sinosTurb) -->
-<!-- qboxplot(sinosTurb,log="y",probs=c(0.25,0.5,0.75),ylab="Turbidez (UNT)",xlab="Pontos",ylim=c(0.1,500),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=40,col=4,lwd=2) -->
-<!-- abline(h=100,col=7,lwd=2) -->
-<!-- qboxplot(sinosTurb,log="y",probs=c(0.25,0.5,0.75),ylab="Turbidez (UNT)",xlab="Pontos",ylim=c(1,500),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=40,col=4,lwd=2) -->
-<!-- abline(h=100,col=7,lwd=2) -->
-<!-- qboxplot(sinosTurb,probs=c(0.25,0.5,0.75),ylab="Turbidez (UNT)",xlab="Pontos",ylim=c(1,500),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=40,col=4,lwd=2) -->
-<!-- abline(h=100,col=7,lwd=2) -->
-<!-- qboxplot(sinosTurb,probs=c(0.25,0.5,0.75),ylab="Turbidez (UNT)",xlab="Pontos",ylim=c(1,200),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=40,col=4,lwd=2) -->
-<!-- abline(h=100,col=7,lwd=2) -->
-<!-- qboxplot(sinosTurb,log="y",probs=c(0.25,0.5,0.75),ylab="Turbidez (UNT)",xlab="Pontos",ylim=c(1,200),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=40,col=4,lwd=2) -->
-<!-- abline(h=100,col=7,lwd=2) -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosTurb.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinosTurb,log="y",probs=c(0.25,0.5,0.75),ylab="Turbidez (UNT)",xlab="Pontos",ylim=c(1,200),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=40,col=4,lwd=2) -->
-<!-- abline(h=100,col=7,lwd=2) -->
-<!-- dev.off() -->
-<!-- qboxplot(sinosTemp,probs=c(0.25,0.5,0.75),ylab="Temperatura (ºC)",xlab="Pontos",ylim=c(0,30),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- summary(sinosTemp) -->
-<!-- qboxplot(sinosTemp,probs=c(0.25,0.5,0.75),ylab="Temperatura (ºC)",xlab="Pontos",ylim=c(0,35),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosTemp.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinosTemp,probs=c(0.25,0.5,0.75),ylab="Temperatura (ºC)",xlab="Pontos",ylim=c(0,35),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- dev.off() -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(0,14),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),log="y",ylab="pH",xlab="Pontos",las=1,ylim=c(0,14),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),log="y",ylab="pH",xlab="Pontos",las=1,ylim=c(1,14),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),log="y",ylab="pH",xlab="Pontos",las=1,ylim=c(0,14),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(0,14),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- summary(sinospH) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(4,10),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(5,10),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(4,10),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(5,10),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(0,14),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinospH-1.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(0,14),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinospH-2.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(4,10),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinospH-3.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(5,10),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosDBO.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinosDBO,probs=c(0.25,0.5,0.75),ylab="DBO5 (mg/L)",xlab="Pontos",las=1,ylim=c(0,25),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=10,col=7,lwd=2) -->
-<!-- abline(h=3,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosDBO.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosDBO,probs=c(0.25,0.5,0.75),ylab="DBO5 (mg/L)",xlab="Pontos",las=1,ylim=c(0,25),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=10,col=7,lwd=2) -->
-<!-- abline(h=3,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosOD.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosOD,probs=c(0.25,0.5,0.75),ylab="OD (mg/L)",xlab="Pontos",las=1,ylim=c(0,12),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- abline(h=4,col=7,lwd=2) -->
-<!-- abline(h=2,col=2,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosDBO.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosDBO,probs=c(0.25,0.5,0.75),ylab="DBO5 (mg/L)",xlab="Pontos",las=1,ylim=c(0,25),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=10,col=7,lwd=2) -->
-<!-- abline(h=3,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosTurb.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosTurb,log="y",probs=c(0.25,0.5,0.75),ylab="Turbidez (UNT)",xlab="Pontos",ylim=c(1,200),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=40,col=4,lwd=2) -->
-<!-- abline(h=100,col=7,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosTemp.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosTemp,probs=c(0.25,0.5,0.75),ylab="Temperatura (ºC)",xlab="Pontos",ylim=c(0,35),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinospH-1.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(0,14),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinospH-2.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(4,10),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinospH-3.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(5,10),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=2,lwd=2) -->
-<!-- dev.off() -->
-<!-- qboxplot(sinosEcoli,probs=c(0.25,0.5,0.75),ylab="NMP/100mL",log="y",las=0,ylim=c(10,10000000),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=160,col=4,lwd=2) -->
-<!-- abline(h=800,col=3,lwd=2) -->
-<!-- abline(h=3200,col=7,lwd=2) -->
-<!-- summary(sinosEcoli) -->
-<!-- qboxplot(sinosEcoli,probs=c(0.25,0.5,0.75),ylab="NMP/100mL",log="y",las=0,ylim=c(1,10000000),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=160,col=4,lwd=2) -->
-<!-- abline(h=800,col=3,lwd=2) -->
-<!-- abline(h=3200,col=7,lwd=2) -->
-<!-- qboxplot(sinosEcoli,probs=c(0.25,0.5,0.75),ylab="NMP/100mL",log="y",las=0,ylim=c(1,5000000),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=160,col=4,lwd=2) -->
-<!-- abline(h=800,col=3,lwd=2) -->
-<!-- abline(h=3200,col=7,lwd=2) -->
-<!-- qboxplot(sinosEcoli,probs=c(0.25,0.5,0.75),ylab="NMP/100mL",log="y",las=0,ylim=c(1,10000000),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=160,col=4,lwd=2) -->
-<!-- abline(h=800,col=3,lwd=2) -->
-<!-- abline(h=3200,col=7,lwd=2) -->
-<!-- qboxplot(sinosEcoli,probs=c(0.25,0.5,0.75),ylab="NMP/100mL",log="y",las=0,ylim=c(1,100000000),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=160,col=4,lwd=2) -->
-<!-- abline(h=800,col=3,lwd=2) -->
-<!-- abline(h=3200,col=7,lwd=2) -->
-<!-- qboxplot(sinosEcoli,probs=c(0.25,0.5,0.75),ylab="NMP/100mL",log="y",las=0,ylim=c(1,10000000),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=160,col=4,lwd=2) -->
-<!-- abline(h=800,col=3,lwd=2) -->
-<!-- abline(h=3200,col=7,lwd=2) -->
-<!-- qboxplot(sinosEcoli,probs=c(0.25,0.5,0.75),ylab="NMP/100mL",log="y",las=0,ylim=c(1,15000000),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=160,col=4,lwd=2) -->
-<!-- abline(h=800,col=3,lwd=2) -->
-<!-- abline(h=3200,col=7,lwd=2) -->
-<!-- qboxplot(sinosEcoli,probs=c(0.25,0.5,0.75),ylab="NMP/100mL",log="y",las=0,ylim=c(1,25000000),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=160,col=4,lwd=2) -->
-<!-- abline(h=800,col=3,lwd=2) -->
-<!-- abline(h=3200,col=7,lwd=2) -->
-<!-- qboxplot(sinosEcoli,probs=c(0.25,0.5,0.75),ylab="NMP/100mL",log="y",las=0,ylim=c(1,30000000),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=160,col=4,lwd=2) -->
-<!-- abline(h=800,col=3,lwd=2) -->
-<!-- abline(h=3200,col=7,lwd=2) -->
-<!-- qboxplot(sinosEcoli,probs=c(0.25,0.5,0.75),ylab="NMP/100mL",log="y",las=0,ylim=c(1,50000000),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=160,col=4,lwd=2) -->
-<!-- abline(h=800,col=3,lwd=2) -->
-<!-- abline(h=3200,col=7,lwd=2) -->
-<!-- qboxplot(sinosEcoli,probs=c(0.25,0.5,0.75),ylab="NMP/100mL",log="y",las=1,ylim=c(1,30000000),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=160,col=4,lwd=2) -->
-<!-- abline(h=800,col=3,lwd=2) -->
-<!-- abline(h=3200,col=7,lwd=2) -->
-<!-- qboxplot(sinosEcoli,probs=c(0.25,0.5,0.75),ylab="NMP/100mL",log="y",las=0,ylim=c(1,50000000),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=160,col=4,lwd=2) -->
-<!-- abline(h=800,col=3,lwd=2) -->
-<!-- abline(h=3200,col=7,lwd=2) -->
-<!-- sumario-ecoli<-summary(sinosEcoli) -->
-<!-- summary(sinosEcoli) -->
-<!-- library(Hmisc) -->
-<!-- install.packages("Hmisc") -->
-<!-- library(Hmisc) -->
-<!-- describe(sinosEcoli) -->
-<!-- sapply(sinosOD) -->
-<!-- sapply(sinosOD,mean) -->
-<!-- View(sinosOD) -->
-<!-- summary(sinosOD) -->
-<!-- summary(sinosEcoli) -->
-<!-- sumario_ecoli<-summary(sinosEcoli) -->
-<!-- ?write.table -->
-<!-- write.table(sumario_ecoli,file="sumario_ecoli.csv",sep = ",",col.names = TRUE) -->
-<!-- write.table(sumario_ecoli,file="sumario_ecoli.csv",append = TRUE ,sep = ",",col.names = TRUE) -->
-<!-- qboxplot(sinosEcoli,probs=c(0.25,0.5,0.75),ylab="NMP/100mL",log="y",las=0,ylim=c(1,50000000),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=160,col=4,lwd=2) -->
-<!-- abline(h=800,col=3,lwd=2) -->
-<!-- abline(h=3200,col=7,lwd=2) -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosEcoli.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosEcoli,probs=c(0.25,0.5,0.75),ylab="NMP/100mL",log="y",las=0,ylim=c(1,50000000),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=160,col=4,lwd=2) -->
-<!-- abline(h=800,col=3,lwd=2) -->
-<!-- abline(h=3200,col=7,lwd=2) -->
-<!-- dev.off() -->
-<!-- qboxplot(sinosNamon,probs=c(0.25,0.5,0.75),ylab="mg/L",log="y",las=1, ylim=c(0.005,50),col=c(8), outpch="o") -->
-<!-- abline(h=13.3,col=7,lwd=2) -->
-<!-- abline(h=3.7,col=4,lwd=2) -->
-<!-- summary(sinosNamon) -->
-<!-- qboxplot(sinosNamon,probs=c(0.25,0.5,0.75),ylab="mg/L",log="y",las=1, ylim=c(0.05,50),col=c(8), outpch="o") -->
-<!-- abline(h=13.3,col=7,lwd=2) -->
-<!-- abline(h=3.7,col=4,lwd=2) -->
-<!-- qboxplot(sinosNamon,probs=c(0.25,0.5,0.75),ylab="mg/L",log="y",las=1, ylim=c(0.005,50),col=c(8), outpch="o") -->
-<!-- abline(h=13.3,col=7,lwd=2) -->
-<!-- abline(h=3.7,col=4,lwd=2) -->
-<!-- qboxplot(sinosNamon,probs=c(0.25,0.5,0.75),ylab="mg/L",log="y",las=1, ylim=c(0.01,50),col=c(8), outpch="o") -->
-<!-- abline(h=13.3,col=7,lwd=2) -->
-<!-- abline(h=3.7,col=4,lwd=2) -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosNamon.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosNamon,probs=c(0.25,0.5,0.75),ylab="mg/L",log="y",las=1, ylim=c(0.01,50),col=c(8), outpch="o") -->
-<!-- abline(h=13.3,col=7,lwd=2) -->
-<!-- abline(h=3.7,col=4,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosNamon.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosNamon,probs=c(0.25,0.5,0.75),ylab="Nitrogênio amoniacal (mg/L)",log="y",las=1, ylim=c(0.01,50),col=c(8), outpch="o") -->
-<!-- abline(h=13.3,col=7,lwd=2) -->
-<!-- abline(h=3.7,col=4,lwd=2) -->
-<!-- dev.off() -->
-<!-- qboxplot(sinosNamon,probs=c(0.25,0.5,0.75),ylab="Nitrogênio amoniacal (mg/L)",log="y",las=1, ylim=c(0.01,50),col=c(8), outpch="o") -->
-<!-- abline(h=13.3,col=7,lwd=2) -->
-<!-- abline(h=3.7,col=3,lwd=2) -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosNamon.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosNamon,probs=c(0.25,0.5,0.75),ylab="Nitrogênio amoniacal (mg/L)",log="y",las=1, ylim=c(0.01,50),col=c(8), outpch="o") -->
-<!-- abline(h=13.3,col=7,lwd=2) -->
-<!-- abline(h=3.7,col=4,lwd=2) -->
-<!-- dev.off() -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",log="y",las=1, ylim=c(0.01,50),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=7,lwd=2) -->
-<!-- summary(sinosSDT) -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",log="y",las=1, ylim=c(1,15000),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=7,lwd=2) -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",log="y",las=1, ylim=c(10,15000),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=7,lwd=2) -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",log="y",las=1, ylim=c(10,10000),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=7,lwd=2) -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",log="y",las=1, ylim=c(1,10000),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=7,lwd=2) -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",log="y",las=1, ylim=c(5,10000),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=7,lwd=2) -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",log="y",las=1, ylim=c(1,10000),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=7,lwd=2) -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosST-2.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",log="y",las=1, ylim=c(1,10000),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=7,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosST-1.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",log="y",las=1, ylim=c(10,10000),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=7,lwd=2) -->
-<!-- dev.off() -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",log="y",las=1, ylim=c(5,10000),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=7,lwd=2) -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosST-3.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",log="y",las=1, ylim=c(5,10000),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=7,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosEcoli.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosEcoli,probs=c(0.25,0.5,0.75),ylab="E. coli (NMP/100mL)",xlab="Pontos",log="y",las=0,ylim=c(1,50000000),col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=160,col=4,lwd=2) -->
-<!-- abline(h=800,col=3,lwd=2) -->
-<!-- abline(h=3200,col=7,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosNamon.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosNamon,probs=c(0.25,0.5,0.75),ylab="Nitrogênio amoniacal (mg/L)",xlab="Pontos",log="y",las=1, ylim=c(0.01,50),col=c(8), outpch="o") -->
-<!-- abline(h=13.3,col=7,lwd=2) -->
-<!-- abline(h=3.7,col=4,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosST-1.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",xlab="Pontos",log="y",las=1, ylim=c(10,10000),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=7,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosST-2.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",xlab="Pontos",log="y",las=1, ylim=c(1,10000),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=7,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosST-3.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",xlab="Pontos",log="y",las=1, ylim=c(5,10000),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=7,lwd=2) -->
-<!-- dev.off() -->
-<!-- summary(sinosOD) -->
-<!-- save.image("C:/Users/Léo/Desktop/artigo sumire/workspace_220421.RData") -->
-<!-- setwd("C:/Users/Léo/Desktop/artigo sumire") -->
-<!-- load("C:/Users/Léo/Desktop/artigo sumire/.RData") -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(5,9),col=c(8),outpch="o") -->
-<!-- llibrary(qboxplot) -->
-<!-- library(qboxplot) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(5,9),col=c(8),outpch="o") -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinospH-4.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(5,9),col=c(8),outpch="o") -->
-<!-- dev.off() -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(5,9),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=4,lwd=2) -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinospH-5.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinospH,probs=c(0.25,0.5,0.75),ylab="pH",xlab="Pontos",las=1,ylim=c(5,9),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=9,col=4,lwd=2) -->
-<!-- dev.off() -->
-<!-- save.image("C:/Users/Léo/Desktop/artigo sumire/workspace_240521.RData") -->
-<!-- library(qboxplot) -->
-<!-- qboxplot(sinosTurb,log="y",probs=c(0.25,0.5,0.75),ylab="Turbidez (UNT)",xlab="Pontos",ylim=c(1,200),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=40,col=4,lwd=2) -->
-<!-- abline(h=100,col=3,lwd=2) -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosTurb-2.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosTurb,log="y",probs=c(0.25,0.5,0.75),ylab="Turbidez (UNT)",xlab="Pontos",ylim=c(1,200),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=40,col=4,lwd=2) -->
-<!-- abline(h=100,col=3,lwd=2) -->
-<!-- dev.off() -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosTurb-2.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosTurb,log="y",probs=c(0.25,0.5,0.75),ylab="Turbidez (UNT)",xlab="Pontos",ylim=c(1,200),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=40,col=4,lwd=2) -->
-<!-- abline(h=100,col=3,lwd=2) -->
-<!-- dev.off() -->
-<!-- library(qboxplot) -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosTurb-2.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosTurb,log="y",probs=c(0.25,0.5,0.75),ylab="Turbidez (UNT)",xlab="Pontos",ylim=c(1,200),las=1,col=c(8), -->
-<!-- outpch="o") -->
-<!-- abline(h=40,col=4,lwd=2) -->
-<!-- abline(h=100,col=3,lwd=2) -->
-<!-- dev.off() -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",xlab="Pontos",log="y",las=1, ylim=c(5,10000),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=4,lwd=2) -->
-<!-- png("C:\\Users\\Léo\\Desktop\\artigo sumire\\sinosST-4.png",width=640, height= 512, units = "px", res = 72) -->
-<!-- qboxplot(sinosSDT,probs=c(0.25,0.5,0.75),ylab="Sólidos Totais (mg/L)",xlab="Pontos",log="y",las=1, ylim=c(5,10000),col=c(8), outpch="o") -->
-<!-- abline(h=500,col=4,lwd=2) -->
-<!-- dev.off() -->
-<!-- save.image("C:/Users/Léo/Desktop/artigo sumire/workspace_260521.RData") -->
-<!-- png("sinosOD.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinosOD,main="Oxigênio Dissolvido",probs=c(0.25,0.5,0.75),ylab="OD (mg/L)",xlab="Pontos",las=1,ylim=c(0,12),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- abline(h=4,col=7,lwd=2) -->
-<!-- abline(h=2,col=2,lwd=2) -->
-<!-- dev.off() -->
-<!-- library(qboxplot) -->
-<!-- png("sinosOD.png",width=1280, height= 1024, units = "px", res = 72) -->
-<!-- qboxplot(sinosOD,main="Oxigênio Dissolvido",probs=c(0.25,0.5,0.75),ylab="OD (mg/L)",xlab="Pontos",las=1,ylim=c(0,12),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- abline(h=4,col=7,lwd=2) -->
-<!-- abline(h=2,col=2,lwd=2) -->
-<!-- dev.off() -->
-<!-- qboxplot(sinosOD,main="Oxigênio Dissolvido",probs=c(0.25,0.5,0.75),ylab="OD (mg/L)",xlab="Pontos",las=1,ylim=c(0,12),col=c(8),outpch="o") -->
-<!-- abline(h=6,col=4,lwd=2) -->
-<!-- abline(h=5,col=3,lwd=2) -->
-<!-- abline(h=4,col=7,lwd=2) -->
-<!-- abline(h=2,col=2,lwd=2) -->
-
-<!-- ``` -->
-
